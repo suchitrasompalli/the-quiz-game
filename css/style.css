@@ -1,0 +1,12 @@
+* {box-sizing:border-box;}
+body {background-color: #ffd700}
+
+.item {
+    background-color:#ffd700;
+    display:block;
+}
+
+.carousel-caption {
+    color:#CCC;
+    position:static;
+}
