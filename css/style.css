@@ -1,5 +1,8 @@
 * {box-sizing:border-box;}
-body {background-color: #ffd700}
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #ffd700;
+}
 
 .item {
     background-color:#ffd700;
@@ -7,6 +10,12 @@ body {background-color: #ffd700}
 }
 
 .carousel-caption {
+    margin-top:10%;
     color:#CCC;
     position:static;
+    background-color: #ff8c00;
+}
+
+.select {
+    margin-top:5%;
 }
