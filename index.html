@@ -11,15 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
     <title>The Quiz Game!</title>
 </head>
 
 <body>
-
-
     <div class="container">
         <div class="text-center">
             <h1>To find your next vacation spot.</h1>
@@ -27,6 +27,7 @@
         </div>
 
         <div id="myCarousel" class="col-lg-6 col-lg-offset-3" data-ride="carousel" data-wrap="false" data-interval="false">
+
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
@@ -34,30 +35,29 @@
                         <h2>Pick your favourite color...</h2>
                         <div class="select row text-center">
                             <div class="col-md-4">
-                                 <label class="radio-inline"><input type="radio" name="optradio ">Blue</label>
+                                 <label class="radio-inline"><input type="radio" id="optcolor1" class="radio" name="optcolor">&nbsp;Blue</label>
                              </div>
                             <div class="col-md-4">
-                                 <label class="radio-inline"><input type="radio" name="optradio ">Red</label>
+                                 <label class="radio-inline"><input type="radio" id="optcolor2" class="radio" name="optcolor">&nbsp;Red</label>
                              </div>
                              <div class="col-md-4">
-                                 <label class="radio-inline"><input type="radio" name="optradio ">Yellow</label>
+                                 <label class="radio-inline"><input type="radio" id="optcolor3" class="radio" name="optcolor">&nbsp;Yellow</label>
                              </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="item ">
+                <div class="item">
                     <div class="carousel-caption">
                         <h2>Pick your favourite animal</h2>
                         <div class="select row text-center">
                             <div class="col-md-4">
-                                <label class="radio-inline "><input type="radio " name="optradio ">Cat</label>
+                                <label class="radio-inline"><input type="radio" class="radio" name="optanimal">&nbsp;Cat</label>
                             </div>
                             <div class="col-md-4">
-                                <label class="radio-inline "><input type="radio " name="optradio ">Dog</label>
+                                <label class="radio-inline"><input type="radio" class="radio" name="optanimal">&nbsp;Dog</label>
                             </div>
                             <div class="col-md-4">
-                                <label class="radio-inline "><input type="radio " name="optradio ">Bird</label>
+                                <label class="radio-inline"><input type="radio" class="radio" name="optanimal">&nbsp;Bird</label>
                             </div>
                         </div>
                     </div>
@@ -68,21 +68,18 @@
                         <h2>Pick your favourite food</h2>
                         <div class="select row text-center">
                             <div class="col-md-4">
-                                <label class="radio-inline "><input type="radio " name="optradio ">Pie</label>
+                                <label class="radio-inline"><input type="radio" class="radio" name="optfood">&nbsp;Pie</label>
                             </div>
                             <div class="col-md-4">
-                                <label class="radio-inline "><input type="radio " name="optradio ">Cookie</label>
+                                <label class="radio-inline"><input type="radio" class="radio" name="optfood">&nbsp;Cookie</label>
                             </div>
                             <div class="col-md-4">
-                                <label class="radio-inline "><input type="radio " name="optradio ">Ice-cream</label>
+                                <label class="radio-inline"><input type="radio" class="radio" name="optfood">&nbsp;Ice-cream</label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </body>

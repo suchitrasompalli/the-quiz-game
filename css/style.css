@@ -2,6 +2,7 @@
 body {
     font-family: 'Permanent Marker', cursive;
     background-color: #ffd700;
+    font-size:large;
 }
 
 .item {
@@ -17,5 +18,18 @@ body {
 }
 
 .select {
-    margin-top:5%;
+    margin-top:8%;
+}
+
+.radio {
+  border:2px solid #ccc;
+  border-top-color:#bbb;
+  border-left-color:#bbb;
+  background:#fff;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+}
+.radio:checked{
+  border:10px solid #4099ff;
 }
