@@ -1,11 +1,6 @@
-function myFunction() {
-    alert("body loaded");
+function restartGame() {
+    window.location.reload();
 }
-
-$("#select :input").change(function() {
-
-    console.log(this); // points to the clicked input button
-});
 
 $(document).ready(function(){
     $("input[name='optcolor']").change(function(){
@@ -19,7 +14,7 @@ $(document).ready(function(){
     });
 
     $("input[name='optfood']").change(function(){
-        
-        $("#myCarousel").carousel(0);
+        $("#message").replaceWith("<div><h1>You will enjoy a beach vacation.</h1></div>");
+        $("#myCarousel").replaceWith("<img src='images/beach.jpeg' alt='Beach Scene' class='select' onClick='restartGame()'></img>");
     });
 });
