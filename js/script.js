@@ -5,7 +5,12 @@ var food_selection = "";
 function restartGame() {
     window.location.reload();
 }
-
+/*
+ Beach vacation (Blue, Cat, Pie)
+ Adventure vacation (Red, Dog, Cookie)
+ Exotic vacation (Yellow, Bird, Ice-cream)
+ If none of above matches vacation will be based only on color selection.
+*/
 function getVacationInformation() {
     if ((color_selection === "Blue") && (animal_selection === "Cat") && (food_selection === "Pie")) {
         return "Beach";
@@ -16,9 +21,16 @@ function getVacationInformation() {
     else if ((color_selection === "Yellow") && (animal_selection === "Bird") && (food_selection === "Ice-cream")) {
         return "Exotic";
     }
-    else if ((color_selection !== "Blue") && (animal_selection === "Bird") && (food_selection === "Ice-cream")) {
+    else if (color_selection === "Blue") {
         return "Beach";
     }
+    else if (color_selection === "Red") {
+        return "Adventure";
+    }
+    else if (color_selection === "Yellow") {
+        return "Exotic";
+    }
+
 }
 
 $(document).ready(function(){
